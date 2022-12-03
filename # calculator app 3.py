@@ -67,15 +67,7 @@ class MyLayout(Widget):
         except:
              prior = self.ids.calc_input.text = 'Error'
         
-        '''
-       # if "+" in prior:
-            num_list = prior.split('+')
-            answer = 0
-            for number in num_list:
-                answer = answer + float(number)
-                
-            self.ids.calc_input.text = str(answer)
-       '''
+ 
 class CalculatorApp(App):
     def build(self):
 	        return MyLayout()
