@@ -155,7 +155,7 @@ Builder.load_string("""
 		    size_hint:(.2,.2)
 		    font_size: 32
 		    text: '='
-		   on_press: root.equals()
+		    on_press: root.equals()
 """) 	   
 
 class MyLayout(Widget):
