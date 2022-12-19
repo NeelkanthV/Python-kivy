@@ -26,7 +26,7 @@ MDScreen:
         height: root.height - toolbar.height - dp(40) 
 	y: root.height - self.height - toolbar.height - dp(20)
         
-# Add the source of the image(s) you want to fit in the swiper! ie.'solar.jpeg' 
+# Add the source of the image(s) you want to fit in the swiper! ie.'solars.jpeg' 
 
         MySwiper:
 	     FitImage:
