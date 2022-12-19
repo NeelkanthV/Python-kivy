@@ -151,10 +151,3 @@ if __name__=="__main__":
             speak("Thanks you for using Martian!")
 
             exit()
-
-                   
-
- 
-
- 
-
