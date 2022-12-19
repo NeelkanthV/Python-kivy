@@ -1,6 +1,3 @@
-
-from distutils.command.build import build
-from json import load
 from kivy.lang import Builder
 from kivymd.app import MDApp
 
