@@ -38,12 +38,7 @@ MDScreen:
         MySwiper:
         
         MySwiper:
- 
-        MySwiper:
-
-        MySwiper:
-		   
-             
+           
     BoxLayout:
         orientation: 'horizontal'
         
