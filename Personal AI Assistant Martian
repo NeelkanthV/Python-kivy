@@ -1,10 +1,6 @@
+# Martian Personal AI Assistant 
 
  
-
-# Martian personal assistant
-
- 
-
 import pyttsx3
 
 import speech_recognition as sr
@@ -24,7 +20,6 @@ from webbrowser import open
 import subprocess as sp
 
  
-
 engine = pyttsx3.init('sapi5')
 
 voices = engine.getProperty('voices')
@@ -47,17 +42,17 @@ def wishMe():
 
     if hour>=0 and hour<12:
 
-        speak("Good Morning Sir")
+        speak("Good Morning")
 
     elif hour>=12 and hour<17:
 
-        speak("Good Afternoon Sir")
+        speak("Good Afternoon")
 
     else:
 
-        speak("Good Evening Sir")
+        speak("Good Evening")
 
-    speak("I am Martian Sir. I am from Mars and I am here to help you.")
+    speak("I am Martian, I am from Mars and I am here to help you.")
 
  
 
@@ -85,7 +80,7 @@ def takeCommand():
 
     except Exception as e:
 
-        speak("Sorry Sir,I could not understand,Could you please say that again?")
+        speak("Sorry,I could not understand,Could you please say that again?")
 
         return "None"
 
@@ -105,7 +100,7 @@ if __name__=="__main__":
 
         if "how are you" in query:
 
-            speak("I'm fine sir,how can i help you?")
+            speak("I'm fine,how can i help you?")
 
        
 
@@ -113,7 +108,7 @@ if __name__=="__main__":
 
         elif "who are you" in query:
 
-            speak("Sir I am Martian personal aasistant")
+            speak("I am Martian Personal AI Aasistant")
 
         elif 'wikipedia' in query:
 
@@ -153,7 +148,7 @@ if __name__=="__main__":
 
         elif 'Martian quit' in query or 'exit' in query or 'close' in query:
 
-            speak("Thanks you for using martian sir")
+            speak("Thanks you for using Martian!")
 
             exit()
 
