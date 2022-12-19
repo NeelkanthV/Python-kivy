@@ -1,0 +1,61 @@
+
+from distutils.command.build import build
+from json import load
+from kivy.lang import Builder
+from kivymd.app import MDApp
+
+class MainApp(MDApp):
+    def build(self):
+        self.theme_cls.theme_style = 'Dark'
+        self.theme_cls.primary_palette = "BlueGray"
+        return Builder.load_string("""
+
+<MySwiper@MDSwiperItem>
+
+MDScreen:
+    
+    MDTopAppBar:
+	      id: toolbar
+		    title: "Image Swiper"
+		    elevation: 10
+		    pos_hint: {"top":1}
+
+    MDSwiper:
+        id: swiper
+	      size_hint_y: None
+		    height: root.height - toolbar.height - dp(40)
+		    y: root.height - self.height - toolbar.height - dp(20)
+        
+# Add the source of the image you want to fit in the swiper! ie.'solar.jpeg' 
+
+        MySwiper:
+		        FitImage:
+                source:'solars.jpeg'
+	              radius:[20,]
+
+	    	MySwiper:
+        
+		    MySwiper:
+        
+        MySwiper:
+ 
+        MySwiper:
+
+        MySwiper:
+		   
+             
+    BoxLayout:
+        orientation: 'horizontal'
+        
+        MDRaisedButton:
+            text: 'Previous'
+            on_release: if swiper.get_current_index() > 0: swiper.set_current(swiper.get_current_index()-1)
+            
+        MDRaisedButton:
+            text: 'Next'
+            on_release: if swiper.get_current_index() < len(swiper.get_items())-1: swiper.set_current(swiper.get_current_index()+1)
+            
+            #len(swiper.get_items())
+    """)
+        
+MainApp().run()    
