@@ -12,30 +12,30 @@ class MyGridLayout(GridLayout):
        super(MyGridLayout,self).__init__(**kwargs)
        
      # Set columns         
-        self.cols = 2
+       self.cols = 2
         
      # Add widgets 
-        self.add_widget(Label(text= "Select the Type of Account. 1)Savings Account. 2)Current Account"))
+       self.add_widget(Label(text= "Select the Type of Account. 1)Savings Account. 2)Current Account"))
      # Add Inputbox
-        self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount = TextInput(multiline = True)
-        self.add_widget(self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount)
+       self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount = TextInput(multiline = True)
+       self.add_widget(self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount)
     
-        self.add_widget(Label(text= "Type of Transaction 1)Deposit. 2)Transfer. 3)withdrawal of Money")) 
-        self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney = TextInput(multiline = False)
-        self.add_widget(self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney)
+       self.add_widget(Label(text= "Type of Transaction 1)Deposit. 2)Transfer. 3)withdrawal of Money")) 
+       self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney = TextInput(multiline = False)
+       self.add_widget(self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney)
         
-        self.add_widget(Label(text = 'Pin'))
-        self.pin = TextInput(password = True, multiline = False)
-        self.add_widget(self.pin)
+       self.add_widget(Label(text = 'Pin'))
+       self.pin = TextInput(password = True, multiline = False)
+       self.add_widget(self.pin)
         
-        self.add_widget(Label(text="Ammount"))
-        self.ammount = TextInput(multiline = False)
-        self.add_widget(self.ammount)
+       self.add_widget(Label(text="Ammount"))
+       self.ammount = TextInput(multiline = False)
+       self.add_widget(self.ammount)
         
     # Creat a OK Button   
-        self.submit = Button(text = "OK",font_size = 32)
-        self.OK.bind(on_press = self.press)
-        self.add_widget(self.OK)
+       self.ok = Button(text = "OK",font_size = 32)
+       self.ok.bind(on_press = self.press)
+       self.add_widget(self.ok)
         
         
     def press(self,insatnce):
