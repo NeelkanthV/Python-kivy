@@ -39,13 +39,10 @@ class MyGridLayout(GridLayout):
         
         
     def press(self,insatnce):
-        SelecttheTypeofAccount1SavingsAccount2CurrentAccount = self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount.text
-        TypeofTransaction1Deposit2Transfer3withdrawalofMoney = self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney.text
-        pin = self.pin.text
-        ammount = self.ammount.text
-        
-        self.add_widget(Label(text=f'Thank you for visiting us today! Collect your ammount from here!')
-    
+        self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount.text = ' '
+        self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney.text = ' '
+        self.pin.text = ' '
+        self.ammount.text = ' '
         
 class MyApp(App):
     def build(self):
