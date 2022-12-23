@@ -39,10 +39,10 @@ class MyGridLayout(GridLayout):
         
         
     def press(self,insatnce):
-        self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount.text = ' '
-        self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney.text = ' '
-        self.pin.text = ' '
-        self.ammount.text = ' '
+        self.SelecttheTypeofAccount1SavingsAccount2CurrentAccount.text = ''
+        self.TypeofTransaction1Deposit2Transfer3withdrawalofMoney.text = ''
+        self.pin.text = ''
+        self.ammount.text = ''
         
 class MyApp(App):
     def build(self):
