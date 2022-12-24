@@ -44,6 +44,8 @@ class MyGridLayout(GridLayout):
         self.pin.text = ''
         self.ammount.text = ''
         
+        self.add_widget(Label(text=f'Thank you for visiting us! Collect your ammount from here!'))
+        
 class MyApp(App):
     def build(self):
         return MyGridLayout()
