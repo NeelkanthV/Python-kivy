@@ -38,7 +38,7 @@ Screen:
              pos_hint: {'center_x':.5}
 
 	  MDTextField:
-              ode: 'round'
+              mode: 'round'
               id: password
 	      hint_text: 'password'
 	      icon_right: 'eye-off'
