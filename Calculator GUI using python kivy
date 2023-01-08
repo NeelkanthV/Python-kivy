@@ -23,12 +23,12 @@ Builder.load_string("""
 	GridLayout:
 	    cols: 4
 	    rows: 5
-            
+            spacing: 5
             Button:
 		size_hint:(.2,.2)
 		font_size: 32
 		text: '**'
-		on_press: root.math_sign('**')
+		on_press: root.percentage() 
 
 	    Button:
 		size_hint:(.2,.2)
@@ -203,7 +203,10 @@ class MyLayout(Widget):
            prior = f'{prior}.'
            self.ids.calc_input.text = prior
         
-        
+    def percentage(self):
+        prior = self.ids.calc_input.text
+        self.ids.calc_input.text = prior + "*" + "0.01"    
+
     def math_sign(self,sign):
         prior = self.ids.calc_input.text 
         self.ids.calc_input.text = f'{prior}{sign}'     
